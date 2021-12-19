@@ -70,6 +70,7 @@
                   <div class="btn-layer"></div>
                   <input type="submit" value="Login">
                </div>
+
                <div class="signup-link">
                   Not a member? <a href="">Signup now</a>
                </div>

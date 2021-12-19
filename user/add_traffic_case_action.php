@@ -103,13 +103,6 @@
 		
 		
 		
-		<ul>
-			<li id="titlehead"style="text-decoration: underline;text-decoration-color:Black;"><p id="title" style="font-size:30px;";>Criminal Info</p></li>
-			<li><a href="about_us.php">About us</a></li>
-			<li><a  href="admin_login.php">Admin</a></li>
-			<li><a class="active" href="officer_login.php">User</a></li>
-			<li><a href="home.php">Home</a></li>
-		</ul>
 
 <?php
 		

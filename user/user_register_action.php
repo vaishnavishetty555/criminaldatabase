@@ -101,7 +101,7 @@
 
 
 
-	<?php include("navbar.php"); ?>
+	
 
 	<?php
 	include("../db/db.php");
@@ -121,8 +121,9 @@
 
 	if ($conn->query($sql) === TRUE) {
 		//echo "New record created successfully";
-		echo "<div id='card'><p>User registered Successfully !!</p>
-    <form action='user_login.php' method='get'><button type='submit' id='done'>Done</button></form></div>";
+		echo "<div id='card'><p>User registered Successfully !!
+		Login to continue..</p>
+    <form action='index.php' method='get'><button type='submit' id='done'>Done</button></form></div>";
 	} else {
 		echo "Error: " . $sql . "<br>" . $conn->error;
 	}

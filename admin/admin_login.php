@@ -2,7 +2,7 @@
 	<head>
 		<style>
 			.bg{
-			background-image:url("imgs/userlogin.jpg");
+			background-image:url("imgs/adminlogin.jpg");
 			height:1000px;
 			background-position:center;
 			background-repeat:no-repeat;
@@ -51,6 +51,7 @@
 				color:black;
 			}
 
+			
 			
 			* {
 				box-sizing: border-box;
@@ -126,10 +127,9 @@
 				 background: rgb(0, 0, 0); 
 				background: rgba(0, 0, 0, 0.5); 
 				color: #f1f1f1;
+				height:1000px;
 				
 			}
-			
-			
 			
 		</style>
 	</head>
@@ -137,30 +137,32 @@
 	<body>
 		
 		<div class="bg">
-		<?php		include("navbar.php");?>	
 		<div class="cont">
-		<h2 style="font-style:italic; font-size:30px;padding-left:30px;">User Login</h2>
+		<?php include("navbar.php");?>
+			
+		<h2 style="font-style:italic; font-size:30px;padding-left:30px;">Admin Login</h2>
 		
-		<div style="text-align:center;"> <img src="..css\imgs\policeimg.png">  </div>
+		<div style="text-align:center;"> <img src="imgs\adminimg.png">  </div>
 		
 		<div class="container">
-			<form action="user_login_action.php" method = "get">
+		
+			<form action="admin_login_action.php" method = "post">
 				<div class="row">
 					<div class="col-25">
-						<label for="email">Email</label>
+						<label for="fname">Admin Id</label>
 					</div>
 					<div class="col-75">
-						<input type="email" pattern=".{1,}" required  name="email" placeholder="Your EmailId..">
+						<input type="text" pattern=".{1,}" required  name="adminid" placeholder="Your Id..">
 					</div>
 				</div>
 				
 				
 				<div class="row">
 					<div class="col-25">
-						<label for="password">Password</label>
+						<label for="lname">Password</label>
 					</div>
 					<div class="col-75">
-						<input type="password" pattern=".{1,}" required name="password" placeholder="Your Password...">
+						<input type="password" pattern=".{1,}" required name="adminpass" placeholder="Your Password...">
 					</div>
 				</div>
 				
@@ -174,11 +176,11 @@
 			
 			
 		</div>
+		
+		</div>
+		
 		</div>
 		</div>
-		
-		
-		
 	</body>
 	
 	
