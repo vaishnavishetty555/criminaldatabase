@@ -1,0 +1,83 @@
+.bg{
+    background-image:url("imgs/emblem.jpg");
+    height:1000px;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+
+   }
+    
+    
+    #title{
+        background-color:transparent;
+        font-size:24px;
+        color:#E53935;
+        
+        color:white;
+        margin-left:20px;
+        
+        }
+        
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:transparent;
+    }
+    
+    li {
+        float: right;
+    }
+    
+    #titlehead{
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        font-size:20px;
+        text-align: center;
+        padding: 16px 20px;
+        margin-top:10px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: #cccccc;
+        color:black;
+    }
+
+    
+    
+    #home_img{
+        padding-left:50px;
+        padding-bottom:10px;
+        
+    }
+    
+    #bottom_posts{
+        
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 10px;
+        margin-top:45%;
+    
+    }
+    
+    #img_title{
+        
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 10px;
+    
+    }
+    
+    #posts{
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+        margin-top:45%;
+    
+    }
