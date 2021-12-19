@@ -1,126 +1,125 @@
-<html>
-	<head>
-		<style>
-		
-		
-		.bg{
-			background-image:url("../css/imgs/police_record.jpg");
-			height:1000px;
-			background-position:center;
-			background-repeat:no-repeat;
-			background-size:cover;
-			opacity:0.8;
-		   }
-		   
-			#title{
-				background-color:transparent;
-				font-size:24px;
-				color:#E53935;
-				
-				color:white;
-				margin-left:20px;
-				
-				}
-				
-			ul {
-			list-style-type: none;
-			margin: 0;
-			padding: 0;
-			overflow: hidden;
-			background-color: transparent;
-			 
-			}
-			
-			li {
-				float: right;
-			}
-			
-			#titlehead{
-				float: left;
-			}
+<!DOCTYPE html>
+<html lang="en">
 
-			li a {
-				display: block;
-				color: white;
-				font-size:20px;
-				text-align: center;
-				padding: 16px 20px;
-				margin-top:10px;
-				text-decoration: none;
-			}
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/home.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-			li a:hover:not(.active) {
-				background-color:  #cccccc;
-				color:black;
-			}
-			
-			.grid-container {
-				display: grid;
-				grid-template-columns: auto auto;
-				grid-gap: 20px;
-				padding: 10px;
-			}
-			
-			.btn{
-				background-color: transparent;
-				border: none;
-				color: #f1f1f1;
-				padding-top:7px;
-				text-align: center;
-				margin-bottom:0px;
-				 font-style: initial;
-				font-size: 30px;
-			}
-			.cont{
-				background-position:center;
-				 background: rgb(0, 0, 0); 
-				background: rgba(0, 0, 0, 0.5); 
-				color: #f1f1f1;
-				
-			}
-			
-			
-			.btn:hover{
-				box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-			}
-			
-		</style>
-	</head>
-	
-	<body>
-		
-		<div class="bg">
-		
-		<ul>
-			<li id="titlehead" style="text-decoration: underline;text-decoration-color:White;"><p id="title" style="font-size:30px;"; >Criminal Info</p></li>
-			<li><a href="about_us.php">About us</a></li>
-			<li><a href="admin_login.php">Admin</a></li>
-			<li><a class="active" href="officer_login.php">User</a></li>
-			<li><a href="home.php">Home</a></li>
-		</ul>
-		
-		
-		<h2 style="font-style:italic; font-size:35px;padding-left:30px;color:white;">Officer Dashboard</h2>
-		
-		<div class="cont">
-		<div class="grid-container">
-			<div style="text-align:right;"> <img src="..\css\imgs\criminalmini.png">  </div>
-			<div ><button type="button" class="btn" onclick="location.href='add_general_case.php'"style="background-color:transparent;">Add General Crime Record</button></div>
-			<div style="text-align:right;"><img src="..\css\imgs\trafficmini.png"></div>  
-			<div ><button type="button" class="btn" onclick="location.href='add_traffic_case.php'"style="background-color:transparent;">Add Traffic Crime Record</button></div>
-			<div style="text-align:right;"><img src="..\css\imgs\searchmini.png"></div>  
-			<div ><button type="button" class="btn" onclick="location.href='search_home.php'"style="background-color:transparent;">Search Records</button></div>
-			
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+	</script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light " style="width: 100%;">
+		<!-- <a class="navbar-brand" href="#">Criminal Database</a> -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav ml-auto">
+
+				<li class="nav-item">
+					<a class="nav-link " href="#">LogOut</a>
+				</li>
+				</li>
+			</ul>
 		</div>
-		
-		</div>
-		
-	</div>	
-		
-	</body>
-	
-	
-	
+	</nav>
+	<div class="container d-flex align-items-center flex-column" style="margin-top: 400px;">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6" style="border-right: 2px dashed black;">
+					<h3 style="cursor: pointer;"><a href="#general_section" style="text-decoration: none;color:aliceblue">General</a></h3>
+					<h3 style="cursor: pointer;"><a href="#traffic_section" style="text-decoration: none;color:aliceblue">Traffic</a></h3>
 
+
+				</div>
+
+				<div class="col-sm-6">
+					<h3 style=" padding-bottom: 3%; cursor: pointer;"><a href="#court_section" style="text-decoration: none;color:aliceblue">Court Decision</a></h3>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<section id="court_section" style="margin-top: 500px;margin-bottom: 200px;">
+		<h3>All Cases</h3>
+		<div>1.case on the qiew weiwueiweu wjehjwehjwhejwehjwehjw wjehjwhejweh</div>
+		<div>1.case on the qiew weiwueiweu wjehjwehjwhejwehjwehjw wjehjwhejweh</div>
+		<div>1.case on the qiew weiwueiweu wjehjwehjwhejwehjwehjw wjehjwhejweh</div>
+		<div>1.case on the qiew weiwueiweu wjehjwehjwhejwehjwehjw wjehjwhejweh</div>
+	</section>
+	<section id="general_section" style="margin-top: 100px;margin-bottom: 200px;">
+		<h3>General</h3>
+		<div>1.case on the qiew weiwueiweu wjehjwehjwhejwehjwehjw wjehjwhejweh</div>
+		<div>1.case on the qiew weiwueiweu wjehjwehjwhejwehjwehjw wjehjwhejweh</div>
+		<div>1.case on the qiew weiwueiweu wjehjwehjwhejwehjwehjw wjehjwhejweh</div>
+		<div>1.case on the qiew weiwueiweu wjehjwehjwhejwehjwehjw wjehjwhejweh</div>
+	</section>
+	<section id="traffic_section" style="margin-top: 100px;margin-bottom: 200px;">
+		<h3>Traffic</h3>
+		<div class="container">
+			<form action="add_traffic_case_action.php" method="get">
+
+
+
+				<div class="row">
+					<div class="col-25">
+						<label for="crimename">Crime Name</label>
+					</div>
+					<div class="col-75">
+						<input type="text" pattern=".{1,}" required name="crimename" placeholder="Crime Name...">
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-25">
+						<label for="accusedname">Accused Name</label>
+					</div>
+					<div class="col-75">
+						<input type="text" pattern=".{1,}" required name="accusedname" placeholder="Accused Name...">
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-25">
+						<label for="description">Case description</label>
+					</div>
+					<div class="col-75">
+						<input type="text" pattern=".{1,}" required name="description" placeholder="Description">
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-25">
+						<label for="date">Case Date</label>
+					</div>
+					<div class="col-75">
+						<input type="date" pattern=".{1,}" required name="casedate" placeholder="Date">
+					</div>
+				</div>
+
+
+				<div class="row">
+					<input type="submit" style="margin-right:600px; margin-top:10px;" value="Submit">
+				</div>
+			</form>
+
+
+
+		</div>
+	</section>
+
+</body>
 
 </html>

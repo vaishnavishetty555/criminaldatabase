@@ -72,7 +72,7 @@
 			#card{
 				background-color:#FFFFEF;
 				margin:150px;
-				height:150px:
+				height:150px;
 				border-radius:5px;
 				box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 				text-align:center;
@@ -99,13 +99,13 @@
 		
 		
 		
-		<ul>
+		<!-- <ul>
 			<li id="titlehead"style="text-decoration: underline;text-decoration-color:white;"><p id="title" style="font-size:30px;">Criminal Info</p></li>
 			<li><a href="about_us.php">About us</a></li>
 			<li><a href="admin_login.php">Admin</a></li>
 			<li><a class="active" href="officer_login.php">User</a></li>
 			<li><a href="home.php">Home</a></li>
-		</ul>
+		</ul> -->
 
 		<?php include("navbar.php");?>
 
