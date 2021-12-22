@@ -1,214 +1,62 @@
 <html>
-	<head>
-		<style>
-			.bg{
-			background-image:url("imgs/criminalinfo.jpg");
-			height:1000px;
-			background-position:center;
-			background-repeat:no-repeat;
-			background-size:cover;
-			opacity:0.8;
-		   }
-			
-			#title{
-				background-color:transparent;
-				font-size:24px;
-				color:#E53935;
-				
-				color:white;
-				margin-left:20px;
-				
-				}
-				
-			ul {
-			list-style-type: none;
-			margin: 0;
-			padding: 0;
-			overflow: hidden;
-			background-color: transparent;
-			}
-			
-			li {
-				float: right;
-			}
-			
-			#titlehead{
-				float: left;
-			}
 
-			li a {
-				display: block;
-				color: white;
-				font-size:20px;
-				text-align: center;
-				padding: 16px 20px;
-				margin-top:10px;
-				text-decoration: none;
-			}
+<head>
+	<meta charset="utf-8">
+	<title>Login and Registration Form</title>
+	<link rel="stylesheet" href="../css/home.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-			li a:hover:not(.active) {
-				background-color: #cccccc;
-				color:Black;
-			}
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
 
-			
-			
-			* {
-				box-sizing: border-box;
-			}
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+	</script>
 
-			input[type=text], select, textarea,input[type=password],input[type=email],input[type=number],input[type=date] {
-				margin-right:400px;
-				text-align:center;
-				width: 40%;
-				padding: 12px;
-				border: 1px solid #ccc;
-				border-radius: 4px;
-				resize: vertical;
-			}
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
 
-			label {
-				font-size:18px;
-				margin-left:450px;
-				padding: 12px 12px 12px 0;
-				display: inline-block;
-			}
+<body>
+	<div class="bg">
 
-			input[type=submit] {
-				background-color: #00b300;
-				color: white;
-				padding: 12px 20px;
-				border: none;
-				border-radius: 4px;
-				cursor: pointer;
-				float: right;
-			}
-
-			input[type=submit]:hover {
-				background-color: #4dff4d;
-			}
-
-			.container {
-			    
-				border-radius: 5px;
-				background-color: transparent;
-				padding: 20px;
-			}
-
-			.col-25 {
-				float: left;
-				width: 50%;
-				margin-top: 6px;
-			}
-
-			.col-75 {
-				float: left;
-				width: 50%;
-				margin-top: 6px;
-			}
-
-			/* Clear floats after the columns */
-			.row:after {
-				content: "";
-				display: table;
-				clear: both;
-			}
-
-			/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-			@media screen and (max-width: 600px) {
-				.col-25, .col-75, input[type=submit] {
-					width: 100%;
-					margin-top: 0;
-				}
-			}
-			.cont{
-				background-position:center;
-				 background: rgb(0, 0, 0); 
-				background: rgba(0, 0, 0, 0.5); 
-				color: #f1f1f1;
-				
-			}
-			
-		</style>
-	</head>
-	
-	<body>
-		<div class="bg">
-		
-		
-		<ul>
-			<li id="titlehead"style="text-decoration: underline;text-decoration-color:White;"><p id="title" style="font-size:30px;";>Criminal Info</p></li>
-			<li><a href="about_us.php">About us</a></li>
-			<li><a href="admin_login.php">Admin</a></li>
-			<li><a class="active" href="officer_login.php">User</a></li>
-			<li><a href="home.php">Home</a></li>
-		</ul>
-		
-		<div class="cont">
-		
-		<h2 style="font-style:italic; font-size:30px;padding-left:30px;">Add Crime Record</h2>
-		
-		<div style="text-align:center;"> <img src="imgs\criminalimg.png">  </div>
-		
-		<div class="container">
-			<form action="add_general_case_action.php" method = "get">
-				
-				
-				
-				<div class="row">
-					<div class="col-25">
-						<label for="crimename">Crime Name</label>
-					</div>
-					<div class="col-75">
+		<div class="wrapper">
+			<div class="form-inner">
+				<h2 style="font-style:italic; font-size:30px;">Add General Record</h2>
+				<form action="add_general_case_action.php" method="get" class="login">
+					<div class="field">
 						<input type="text" pattern=".{1,}" required name="crimename" placeholder="Crime Name...">
 					</div>
-				</div>
-				
-				<div class="row">
-					<div class="col-25">
-						<label for="accusedname">Accused Name</label>
-					</div>
-					<div class="col-75">
+					<div class="field">
 						<input type="text" pattern=".{1,}" required name="accusedname" placeholder="Accused Name...">
 					</div>
-				</div>
-				
-				<div class="row">
-					<div class="col-25">
-						<label for="description">Case description</label>
-					</div>
-					<div class="col-75">
+					<div class="field">
 						<input type="text" pattern=".{1,}" required name="description" placeholder="Description">
 					</div>
-				</div>
-				
-				<div class="row">
-					<div class="col-25">
-						<label for="date">Case Date</label>
-					</div>
-					<div class="col-75">
+					<div class="field">
 						<input type="date" pattern=".{1,}" required name="casedate" placeholder="Date">
 					</div>
-				</div>
-				
-				
-				<div class="row">
-					<input type="submit" style="margin-right:600px; margin-top:10px;" value="Submit">
-				</div>
-			</form>
-			
-			
-			
+
+					<div class="field btn">
+						<div class="btn-layer"></div>
+						<input type="submit" value="Submit">
+					</div>
+
+
+				</form>
+			</div>
 		</div>
-		</div>
-		</div>
-		
-		
-		
-	</body>
-	
-	
-	
+
+
+	</div>
+
+
+
+</body>
+
+
+
 
 
 </html>

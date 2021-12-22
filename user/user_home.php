@@ -28,69 +28,56 @@
 			<ul class="navbar-nav ml-auto">
 
 				<li class="nav-item">
-				<button type="button" class="btn" onclick="location.href='index.php'"style="background-color:transparent;">
-	<h3 style="padding-bottom: 3%; cursor: pointer;text-decoration: none;color:aliceblue">Logout</button></div>
+					<button type="button" class="btn btn-light" onclick="location.href='index.php'">
+						<h3 style=" cursor: pointer;text-decoration: none; text-align:center;">Logout
+					</button>
+		</div>
 
-				</li>
-				</li>
-			</ul>
+		</li>
+		</li>
+		</ul>
 		</div>
 	</nav>
 	<div class="container d-flex align-items-center flex-column" style="margin-top: 30px;">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6">
-	<div ><button type="button" class="btn" onclick="location.href='add_general_case.php'"style="background-color:transparent;">
-	<h3 style="padding-bottom: 3%; cursor: pointer;text-decoration: none;color:aliceblue">Add General Crime Record</button></div>
-</div>
-<div class="col-lg-6">
-	<div ><button type="button" class="btn" onclick="location.href='add_traffic_case.php'"style="background-color:transparent;">
-	<h3 style="padding-bottom: 3%; cursor: pointer;text-decoration: none;color:aliceblue;">Add Traffic Crime Record</button></div>
-</div>
-	<div class="container d-flex align-items-center flex-column" style="margin-top: 100px;">
-</div>
-</div>
-</div>
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-6" style="border-right: 2px dashed black;">
-				<h2 style="text-decoration:underline;color:aliceblue">View My Cases:</h2>
-					<h3 style="cursor: pointer;"><a href="#general_section" style="text-decoration: none;color:aliceblue">General</a></h3>
-					<h3 style="cursor: pointer;"><a href="#traffic_section" style="text-decoration: none;color:aliceblue">Traffic</a></h3>
-
-
+					<div><button type="button" class="btn btn-light" onclick="location.href='add_general_case.php'">
+							<h3 style="cursor: pointer;text-decoration: none;">Add General Crime Record
+						</button></div>
 				</div>
-
-				<div class="col-sm-6">
-					<h3 style=" padding-bottom: 3%; cursor: pointer;"><a href="#court_section" style="text-decoration: none;color:aliceblue">Court Decision</a></h3>
-
+				<div class="col-lg-6">
+					<div><button type="button" class="btn btn-light" onclick="location.href='add_traffic_case.php'">
+							<h3 style=" cursor: pointer;text-decoration: none;">Add Traffic Crime Record
+						</button></div>
 				</div>
-
+				<div class="container d-flex align-items-center flex-column" style="margin-top: 100px;">
+				</div>
 			</div>
 		</div>
-	</div>
-	<section id="general_section" style="margin-top: 300px;margin-bottom: 200px;">
-		<h3>General Cases</h3>
-		<div>1.case on the qiew weiwueiweu wjehjwehjwhejwehjwehjw wjehjwhejweh</div>
-		<div>1.case on the qiew weiwueiweu wjehjwehjwhejwehjwehjw wjehjwhejweh</div>
-		<div>1.case on the qiew weiwueiweu wjehjwehjwhejwehjwehjw wjehjwhejweh</div>
-		<div>1.case on the qiew weiwueiweu wjehjwehjwhejwehjwehjw wjehjwhejweh</div>
-	</section>
-	<section id="traffic_section" style="margin-top: 100px;margin-bottom: 200px;">
-		<h3>Traffic Cases</h3>
-		<div>1.case on the qiew weiwueiweu wjehjwehjwhejwehjwehjw wjehjwhejweh</div>
-		<div>1.case on the qiew weiwueiweu wjehjwehjwhejwehjwehjw wjehjwhejweh</div>
-		<div>1.case on the qiew weiwueiweu wjehjwehjwhejwehjwehjw wjehjwhejweh</div>
-		<div>1.case on the qiew weiwueiweu wjehjwehjwhejwehjwehjw wjehjwhejweh</div>
-	</section>
-	<!--<section id="traffic_section" style="margin-top: 100px;margin-bottom: 200px;">
+
+		<section id="general_section" style="margin-bottom: 200px;">
+			<h3>All General Cases</h3>
+			<div>1.case on the qiew weiwueiweu wjehjwehjwhejwehjwehjw wjehjwhejweh</div>
+			<div>1.case on the qiew weiwueiweu wjehjwehjwhejwehjwehjw wjehjwhejweh</div>
+			<div>1.case on the qiew weiwueiweu wjehjwehjwhejwehjwehjw wjehjwhejweh</div>
+			<div>1.case on the qiew weiwueiweu wjehjwehjwhejwehjwehjw wjehjwhejweh</div>
+		</section>
+		<section id="traffic_section" style="margin-bottom: 200px;">
+			<h3>All Traffic Cases</h3>
+			<div>1.case on the qiew weiwueiweu wjehjwehjwhejwehjwehjw wjehjwhejweh</div>
+			<div>1.case on the qiew weiwueiweu wjehjwehjwhejwehjwehjw wjehjwhejweh</div>
+			<div>1.case on the qiew weiwueiweu wjehjwehjwhejwehjwehjw wjehjwhejweh</div>
+			<div>1.case on the qiew weiwueiweu wjehjwehjwhejwehjwehjw wjehjwhejweh</div>
+		</section>
+		<!--<section id="traffic_section" style="margin-top: 100px;margin-bottom: 200px;">
 		<h3>Traffic</h3>
 		<div class="container">
 			<form action="add_traffic_case_action.php" method="get">-->
 
 
 
-				<!--<div class="row">
+		<!--<div class="row">
 					<div class="col-25">
 						<label for="crimename">Crime Name</label>
 					</div>
@@ -134,7 +121,7 @@
 
 
 
-		</div>
+	</div>
 	</section>
 
 </body>
