@@ -24,7 +24,7 @@
 		<div class="wrapper">
 			<div class="form-inner">
 				<h2 style="font-style:italic; font-size:30px;">Add Traffic Record</h2>
-				<form action="add_general_case_action.php" method="get" class="login">
+				<form action="add_traffic_case_action.php" method="get" class="login">
 					<div class="field">
 						<input type="text" pattern=".{1,}" required name="crimename" placeholder="Crime Name...">
 					</div>

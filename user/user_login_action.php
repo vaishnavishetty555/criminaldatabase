@@ -127,7 +127,10 @@
 		
 		
 		 else {
-			echo "<div id='card'><p>Invalid Id or Password!!!</p><p>Try again with valid Id and Password</p><form action='user_login.php' method='get'><button type='submit' id='done'>Done</button></form></div>";
+			 echo "<script>alert('Invalid username/password');
+			 window.location.href='/criminaldatabase/index.php'</script>";
+			// echo "<div id='card'><p>Invalid Id or Password!!!</p><p>Try again with valid Id and Password</p>
+			// <form action='user_login.php' method='get'><button type='submit' id='done'>Done</button></form></div>";
 		
 		}
 ?>

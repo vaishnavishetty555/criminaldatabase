@@ -121,9 +121,9 @@
 
 	if ($conn->query($sql) === TRUE) {
 		//echo "New record created successfully";
-		echo "<div id='card'><p>User registered Successfully !!
-		Login to continue..</p>
-    <form action='index.php' method='get'><button type='submit' id='done'>Done</button></form></div>";
+		
+	echo "<script>alert('User registered Successfully');
+	window.location.href='/criminaldatabase/index.php'</script>";
 	} else {
 		echo "Error: " . $sql . "<br>" . $conn->error;
 	}

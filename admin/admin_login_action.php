@@ -98,14 +98,6 @@
 	<body>
 		
 		
-		
-		<ul>
-			<li id="titlehead"style="text-decoration: underline;text-decoration-color:white;"><p id="title" style="font-size:30px;">Criminal Info</p></li>
-			<li><a href="about_us.php">About us</a></li>
-			<li><a href="admin_login.php">Admin</a></li>
-			<li><a class="active" href="officer_login.php">User</a></li>
-			<li><a href="home.php">Home</a></li>
-		</ul>
 
 
 <?php
@@ -113,24 +105,30 @@
 			
 include("../db/db.php");
 			
-			$adminid = filter_input(INPUT_POST,'adminid');
-			$adminpass = filter_input(INPUT_POST,'adminpass');
+			$adminid =$_GET['adminemail'];
+			$adminpass = $_GET['adminpass'];
 			
 			$adid="admin@crime";
 			$adpass="admin123";
 			$logflag=0;
 				
-			$sql = "SELECT * FROM admin_database WHERE police_id='$adminid' AND police_password='$adminpass'";
-			$result = $conn->query($sql);
+			// $sql = "SELECT * FROM admin_database WHERE police_id='$adminid' AND police_password='$adminpass'";
+			// $result = $conn->query($sql);
 				
-			if ($result->num_rows > 0) {
+			if ($adminid==$adid && $adminpass==$adpass) {
 				$logflag=0;
+				session_start();
+				$_SESSION['useremail']=$adid;
 				header("Location: admin_home.php");	
+			}else{
+				
+				echo "<script>alert('Invalid username/password');
+				window.location.href='/criminaldatabase/admin/admin_login.php'</script>";	
 			}
 				
 			
 			
-			else
+			/*else
 			{
 				if($adminid==$adid && $adminpass==$adpass)
 				{
@@ -142,7 +140,7 @@ include("../db/db.php");
 					echo "<div id='card'><p>Invalid Id or Password!!!</p><p>Try again with valid Id and Password</p><form action='admin_login.php' method='get'><button type='submit' id='done'>Done</button></form></div>";
 		
 				}
-			}
+			}*/
 		
 		
 ?>
