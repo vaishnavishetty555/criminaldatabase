@@ -33,7 +33,7 @@
                <a class="nav-link" href="#">USER <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-               <a class="nav-link" href="user/admin_login.php">ADMIN</a>
+               <a class="nav-link" href="admin/admin_login.php">ADMIN</a>
             </li>
             </li>
 

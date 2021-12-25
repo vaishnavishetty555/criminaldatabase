@@ -18,6 +18,34 @@
 
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-light " style="width: 100%;">
+		<!-- <a class="navbar-brand" href="#">Criminal Database</a> -->
+		<!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>-->
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav ml-auto">
+
+				<li class="nav-item">
+					<a href="?id=logout" class="btn btn-light">
+						<h3 style=" cursor: pointer;text-decoration: none; text-align:center;">Logout
+</h3>
+					</a>
+						<?php
+						if(isset($_GET['id'])){
+					if($_GET['id']=="logout"){
+						session_start();
+						session_destroy();
+						header("location:../index.php");
+					}}
+						?>
+		</div>
+
+		</li>
+				</li>
+		</ul>
+		</div>
+	</nav>
 
 <?php include("../db/db.php");?>
 		<section id="general_section" style="margin-bottom: 200px;">
@@ -102,7 +130,7 @@ echo '	<tr>
 $count++;
 	}
 }else{
-	echo "<tr><td></td><td></td><td><h4>No case available</h4></td><td></td><td></td><td></td></tr>";
+	echo "<tr><td></td><td></td><td><h4>No case available</h4></td><td></td><td></td><td><td></td></td></tr>";
 }
 ?>
 				
