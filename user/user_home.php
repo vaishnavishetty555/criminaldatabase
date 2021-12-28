@@ -150,55 +150,7 @@ $count++;
 
 			</table>
 		</section>
-		<!--<section id="traffic_section" style="margin-top: 100px;margin-bottom: 200px;">
-		<h3>Traffic</h3>
-		<div class="container">
-			<form action="add_traffic_case_action.php" method="get">-->
-
-
-
-		<!--<div class="row">
-					<div class="col-25">
-						<label for="crimename">Crime Name</label>
-					</div>
-					<div class="col-75">
-						<input type="text" pattern=".{1,}" required name="crimename" placeholder="Crime Name...">
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-25">
-						<label for="accusedname">Accused Name</label>
-					</div>
-					<div class="col-75">
-						<input type="text" pattern=".{1,}" required name="accusedname" placeholder="Accused Name...">
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-25">
-						<label for="description">Case description</label>
-					</div>
-					<div class="col-75">
-						<input type="text" pattern=".{1,}" required name="description" placeholder="Description">
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-25">
-						<label for="date">Case Date</label>
-					</div>
-					<div class="col-75">
-						<input type="date" pattern=".{1,}" required name="casedate" placeholder="Date">
-					</div>
-				</div>
-
-
-				<div class="row">
-					<input type="submit" style="margin-right:600px; margin-top:10px;" value="Submit">
-				</div>
-			</form>-->
-
+	
 
 
 	</div>

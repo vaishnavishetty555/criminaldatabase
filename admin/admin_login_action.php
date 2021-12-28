@@ -108,8 +108,8 @@ include("../db/db.php");
 			$adminid =$_GET['adminemail'];
 			$adminpass = $_GET['adminpass'];
 			
-			$adid="admin@crime";
-			$adpass="admin123";
+			$adid="admin@gmail.com";
+			$adpass="admin1";
 			$logflag=0;
 				
 			// $sql = "SELECT * FROM admin_database WHERE police_id='$adminid' AND police_password='$adminpass'";
